@@ -1,24 +1,21 @@
 
 //CREATE CONNECTION WITH THE DATABASE
-
+require('dotenv').config();
 const sql = require('mssql');
+
+
 const config = {
-    server:'DESKTOP-8SUCDH9\\SQLEXPRESS',
-    database:'FlashMart',
-    user: 'sa',
-    password: '123456',
-  options:
-  {
-    encrypt:false,
-    enableArithAbort:true,
-    trustServerCertificate: true
-
+  server: process.env.DB_SERVER,
+  database: process.env.DB_NAME,
+  user: process.env.DB_USER,
+  password: process.env.DB_PASS,
+  options: {
+    encrypt: process.env.DB_ENCRYPT === 'true',
+    enableArithAbort: process.env.DB_ENABLE_ARITH_ABORT === 'true',
+    trustServerCertificate: process.env.DB_TRUST_CERT === 'true'
   },
-
-  port:`1433`
-
-  };
-  
+  port: parseInt(process.env.DB_PORT, 10) // ✅ ensures it's a number
+};
 
   
 // Create connection pool

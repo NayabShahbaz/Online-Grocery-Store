@@ -283,28 +283,28 @@ select * from Category
 INSERT INTO ProductDetail ( Category_ID, Product_Name, Product_Price, Product_Quantity, Product_ExpiryDate, Product_Image)
 VALUES
 (1, 'Rice', 120.00, 100, '2026-12-31', 'rice.jpg'),
-(2, 'Milk', 80.00, 100, '2025-06-15', 'milk.jpg'),
+(2, 'Milk', 80.00, 100, '2026-06-15', 'milk.jpg'),
 (3, 'Salt', 50.00, 80, '2027-01-10', 'salt.jpg'),
-(4, 'Bread', 40.00, 80, '2025-12-05', 'bread.jpg'),
-(5, 'Carrots', 30.00, 60, '2025-10-10', 'carrots.jpg'),
-(6, 'Chicken', 500.00, 40, '2025-11-01', 'chicken.jpg'),
-(7, 'Apples', 250.00, 300, '2025-10-20', 'apples.jpg'),
+(4, 'Bread', 40.00, 80, '2026-12-05', 'bread.jpg'),
+(5, 'Carrots', 30.00, 60, '2026-10-10', 'carrots.jpg'),
+(6, 'Chicken', 500.00, 40, '2026-11-01', 'chicken.jpg'),
+(7, 'Apples', 250.00, 300, '2026-10-20', 'apples.jpg'),
 (8, 'Detergent', 350.00, 100, '2026-09-30', 'detergent.jpg'),
 (9, 'Blender', 3000.00, 70, '2026-12-31', 'blender.jpg'),
+
+
 (10, 'Non-Stick Pan', 1500.00, 70, '2026-08-15', 'pan.jpg');
 
 select * from ProductDetail
-
-
 --Insert data into Cart Table
 
 INSERT INTO Cart ( Customer_ID, Product_ID, Quantity)
 VALUES
-( 1, 2, 2),
+( 1, 4, 2),
 ( 1, 3, 5),
 ( 1, 5, 12),
 ( 2, 5, 3),
-(3, 1, 1),
+(3, 3, 1),
 (3, 10,2),
 (4, 7, 2),
 (4, 6, 4),
@@ -343,9 +343,9 @@ select* from Orders
 
 INSERT INTO OrderDetails ( Orders_ID, Product_ID, OrderDetails_Quantity, OrderDetails_Price)
 VALUES
-(1, 2, 2, 160.00),
+(1, 3, 2, 160.00),
 (2, 5, 3, 90.00),
-( 3, 1, 1, 120.00),
+( 3, 3, 1, 120.00),
 ( 4, 7, 2, 500.00),
 (5, 6, 1, 500.00),
 ( 6, 3, 4, 200.00),
@@ -377,11 +377,10 @@ select * from Payments
 --Insert data into Wishlist 
 
 INSERT INTO Wishlist ( Customer_ID, Product_ID)
-VALUES ( 2, 1),
-(2, 2),
+VALUES ( 2, 6),
+(2, 4),
 (2, 3),
 (2, 10),
-(2, 4),
 (3, 4),
 (3, 5),
 ( 4, 6),
@@ -389,8 +388,8 @@ VALUES ( 2, 1),
 (5, 8),
 (5, 9),
 (6, 10),
-(6, 1),
-(7, 2),
+(6, 5),
+(7, 5),
 (7, 3),
 ( 8, 4),
 (8, 5),
@@ -402,9 +401,9 @@ VALUES ( 2, 1),
 
 INSERT INTO Reviews ( Customer_ID, Product_ID, Rating, Comment, ReviewDate)
 VALUES
-(2, 1, 5, 'Excellent product!', '2025-03-20'),
+(2, 4, 5, 'Excellent product!', '2025-03-20'),
 (2, 3, 4, 'Decent quality,worth the price', '2025-03-19'),
-(3, 2, 4, 'Very good, but packaging could be better.', '2025-03-18'),
+(3, 4, 4, 'Very good, but packaging could be better.', '2025-03-18'),
 (3, 5, 3, 'Satisfactory but could be improved.', '2025-03-17'),
 (4, 3, 3, 'Average quality.', '2025-03-16'),
 (4, 7, 5, 'Perfect for my needs!', '2025-03-15'),
@@ -417,7 +416,7 @@ VALUES
 (8, 7, 5, 'Absolutely loved it!', '2025-03-08'),
 (8, 10, 3, 'Average experience.', '2025-03-07'),
 (9, 8, 3, 'It was okay.', '2025-03-06'),
-(9, 2, 4, 'Would recommend!', '2025-03-05');
+(9, 3, 4, 'Would recommend!', '2025-03-05');
 
 
 --Insert data into Delivery Details

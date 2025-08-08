@@ -12,12 +12,11 @@ const {sql,poolPromise} = require('./db'); //Import connection from db.js
 
 
 require("dotenv").config(); //for the environment file which contains secret key
-const jwtSecret = process.env.JWT_SECRET || "your_jwt_secret";
+ const jwtSecret = process.env.JWT_SECRET || "your_jwt_secret";
 
 const app = express();
 app.use(bodyParser.json());
 app.use(express.json());
-//app.use(cors());
 app.use(cors({
     origin: 'http://localhost:3000', // Your React app's URL
     credentials: true,
@@ -67,7 +66,7 @@ async function hashAllPasswords() { //For hashing already existing passwords in 
     }
 }
 
-hashAllPasswords(); //Call function once
+// hashAllPasswords(); //Call function once
 
 
 //----------------------------CUSTOMER LOGIN-------------------------------------
