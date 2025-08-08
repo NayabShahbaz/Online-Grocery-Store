@@ -1,9 +1,9 @@
 # 🛒 Online Grocery Store
 
-![GitHub repo size](https://img.shields.io/github/repo-size/YourUsername/Online-Grocery-Store?color=green)
-![GitHub last commit](https://img.shields.io/github/last-commit/YourUsername/Online-Grocery-Store?color=orange)
-![GitHub issues](https://img.shields.io/github/issues/YourUsername/Online-Grocery-Store?color=red)
-![GitHub stars](https://img.shields.io/github/stars/YourUsername/Online-Grocery-Store?style=social)
+![GitHub repo size](https://img.shields.io/github/repo-size/NayabShahbaz/Online-Grocery-Store?color=green)
+![GitHub last commit](https://img.shields.io/github/last-commit/NayabShahbaz/Online-Grocery-Store?color=orange)
+![GitHub issues](https://img.shields.io/github/issues/NayabShahbaz/Online-Grocery-Store?color=red)
+![GitHub stars](https://img.shields.io/github/stars/NayabShahbaz/Online-Grocery-Store?style=social)
 
 A **full-stack online grocery store application** where customers can browse products, add items to the cart, and place orders — built with **React**, **Node.js**, and **MySQL**.
 
