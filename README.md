@@ -1,3 +1,4 @@
+# Online-Grocery-Store
 
 <div align="center">
   <img src="frontend/public/images/grocery.jpeg" alt="Grocery Store" width="120" />
@@ -105,16 +106,16 @@ You must create your own `.env` file in the `backend` directory to store sensiti
 **Sample `.env` file (use this exact format, replace placeholder values):**
 
 ```properties
-JWT_SECRET=yourVerySecretKey        # e.g. mySuperSecretKey123
+JWT_SECRET=your_jwt_secret_key         # e.g. mySuperSecretKey123
 
-DB_SERVER=DESKTOP-8SUCDH9\SQLEXPRESS # e.g. YOUR_PC_NAME\SQLEXPRESS
-DB_NAME=FlashMart                   # e.g. grocery_db
-DB_USER=sa                          # e.g. db_user
-DB_PASS=123456                      # e.g. db_password
-DB_PORT=1433                        # e.g. 1433
-DB_ENCRYPT=false                    # true or false
-DB_ENABLE_ARITH_ABORT=true           # true or false
-DB_TRUST_CERT=true                   # true or false
+DB_SERVER=your_server_name\SQLEXPRESS # e.g. YOUR_PC_NAME\SQLEXPRESS
+DB_NAME=your_database_name             # e.g. grocery_db
+DB_USER=your_database_user             # e.g. sa
+DB_PASS=your_database_password         # e.g. 123456
+DB_PORT=your_database_port             # e.g. 1433
+DB_ENCRYPT=false                       # true or false
+DB_ENABLE_ARITH_ABORT=true              # true or false
+DB_TRUST_CERT=true                      # true or false
 ```
 
 Add any other environment variables your setup requires. Do not commit this file to GitHub.
