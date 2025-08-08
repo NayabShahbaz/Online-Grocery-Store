@@ -57,53 +57,27 @@ Online-Grocery-Store/
 └── database.sql  # Database schema & sample data
 
 
-🚀 Getting Started
-1️⃣ Clone the Repository
-bash
-Copy code
-git clone https://github.com/YourUsername/Online-Grocery-Store.git
-cd Online-Grocery-Store
-2️⃣ Setup Backend
+---
+
+## ⚙️ Installation & Setup
+
+### **1️⃣ Clone the repository**
+```bash
+git clone https://github.com/yourusername/online-grocery-store.git
+cd online-grocery-store
+
+
+2️⃣ Backend Setup
 bash
 Copy code
 cd backend
 npm install
-Create a .env file:
+Create a .env file inside the backend folder:
 
 env
 Copy code
 DB_HOST=localhost
 DB_USER=root
 DB_PASSWORD=yourpassword
-DB_NAME=grocery_store
+DB_NAME=grocerydb
 PORT=5000
-Start backend:
-
-bash
-Copy code
-npm start
-
-
-3️⃣ Setup Frontend
-bash
-Copy code
-cd ../frontend
-npm install
-npm start
-
-💾 Database Setup
-
-
-📌 Future Enhancements
-✅ JWT-based authentication
-
-✅ Payment Gateway Integration
-
-✅ User Profile & Order History
-
-✅ Mobile-Friendly UI
-
-
-🤝 Contributing
-Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
-
