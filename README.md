@@ -14,7 +14,7 @@ A **full-stack online grocery store application** where customers can browse pro
 - 🛍 **Browse Categories & Products**
 - 🔍 **Search & Filter** products
 - 🛒 **Add to Cart & Checkout**
-- 💳 **Secure Payment Integration** *(optional / placeholder)*
+- 💳 **Secure Payment Integration** 
 - 📦 **Order Tracking**
 - 📊 **Admin Dashboard** to manage products, orders, and customers
 
